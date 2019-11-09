@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Document</title>
+
+		<style>
+			* {
+				box-sizing: border-box;
+				font-family: Metropolis, Roboto, 'Open Sans', sans-serif;
+				color: #2d3142;
+			}
+
+			html {
+				overflow-x: hidden;
+			}
+
+			body {
+				margin: 0px;
+				padding: 0px;
+				font-size: 16px;
+			}
+
+			nav {
+				position: relative;
+				background: #ffcb23;
+			}
+
+			.nav__logo {
+				position: absolute;
+				top: 50%;
+				transform: translateY(-48%);
+				left: 20px;
+			}
+
+			select {
+				font-size: 16px;
+				font-weight: bold;
+				width: 100vw;
+				height: 60px;
+				border: none;
+				outline: none;
+				appearance: none;
+				-webkit-appearance: none;
+				-moz-appearance: none;
+				background: transparent;
+				background: #ffcb23;
+				text-align: right;
+				padding-right: 50px;
+			}
+
+			div.nav__menu::before {
+				content: '';
+				display: block;
+				position: absolute;
+				right: 0px;
+				top: 0px;
+				height: 60px;
+				width: 100px;
+				background: url('./img/burger.png') right 20px center / 20px no-repeat;
+				pointer-events: none;
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<nav class="nav">
+			<div class="nav__logo">
+				<a href=""><img src="./img/logo.png" alt="logo" height="25px"/></a>
+			</div>
+			<div class="nav__menu">
+				<select name="" id="menu">
+					<option value="">Home</option>
+					<option value="">About</option>
+					<option value="">Apply</option>
+					<option value="">Contact</option>
+				</select>
+			</div>
+		</nav>
+	</body>
+</html>
